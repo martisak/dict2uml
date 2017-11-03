@@ -1,25 +1,26 @@
-sudo: required
-
-env:
-  global:
-    - PATH=$TRAVIS_BUILD_DIR/usr/bin/:$PATH
-
+language: python
 python:
-  - 2.6
-  - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
-  - 3.5
-  - 3.6
-
-# command to install dependencies
+  - "2.6"
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev" # 3.5 development branch
+  - "3.6"
+  - "3.6-dev" # 3.6 development branch
+  - "3.7-dev" # 3.7 development branch
+  - "nightly"
 
 before_install:
-  - sudo pip install --upgrade pip
+  - pip install --upgrade pip
 
+# command to install dependencies
 install:
-    - sudo pip install .
+  - pip install -r requirements.txt
+  - pip install .
 
+# command to run tests
 script:
-  - echo "{'m':1}" | python dict2uml/dict2uml.py
+  - pytest # or py.test for Python versions 3.5 and below
+
