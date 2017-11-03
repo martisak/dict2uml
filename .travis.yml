@@ -2,14 +2,19 @@ language: python
 python:
   - "2.7"
 
-
-
-# command to install dependencies
 install:
   - pip install jupyter pytest
+  - pip install nose coverage
+  - pip install coveralls
+  - pip install pytest-cov
   - pip install .
 
-# command to run tests
-script:
-  - py.test # or py.test for Python versions 3.5 and below
+before_script:
+  - py.test --cov=example
 
+script:
+  - python setup.py nosetests --with-coverage --cover-package pypiview
+  - py.test --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing # or py.test for Python versions 3.5 and below
+
+after_success:
+  - coveralls
