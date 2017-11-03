@@ -8,10 +8,8 @@ Heavily inspired by [json-to-plantuml](https://github.com/meteorbites/json-to-pl
 
 ## Installation
 
-Clone this repo, then do
-
 ~~~
-python setup.py install
+pip install dict2uml
 ~~~
 
 ## Usage
