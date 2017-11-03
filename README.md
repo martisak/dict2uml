@@ -35,7 +35,7 @@ dict2uml.dict2svg(d)
 
 ### Print PlantUML source code
 
-Print the source code for the PlantUML](http://plantuml.com/) class diagram.
+Print the source code for the [PlantUML](http://plantuml.com/) class diagram.
 
 ~~~~
 print(dict2uml.dict2plantuml(d))
