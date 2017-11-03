@@ -10,11 +10,11 @@ install:
   - pip install .
 
 before_script:
-  - py.test --cov=example
+  - py.test --cov=dict2uml
 
 script:
   - python setup.py nosetests --with-coverage --cover-package pypiview
-  - py.test --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing # or py.test for Python versions 3.5 and below
+  - py.test --doctest-modules --pep8 dict2uml -v --cov dict2uml --cov-report term-missing # or py.test for Python versions 3.5 and below
 
 after_success:
   - coveralls
