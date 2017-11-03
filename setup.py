@@ -14,7 +14,7 @@ if __name__ == "__main__":
           description='Converts a Python dictionary to PlantUML',
           author='Martin Isaksson',
           author_email='martin@martisak.com',
-          url='https://www.python.org/sigs/distutils-sig/',
+          url='https://github.com/martisak/dict2uml',
           license='MIT',
           keywords=KEYWORDS,
           install_requires=INSTALL_REQUIRES,
