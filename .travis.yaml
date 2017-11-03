@@ -1,0 +1,25 @@
+sudo: required
+
+env:
+  global:
+    - PATH=$TRAVIS_BUILD_DIR/usr/bin/:$PATH
+
+python:
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+  - 3.5
+  - 3.6
+
+# command to install dependencies
+
+before_install:
+  - sudo pip install --upgrade pip
+
+install:
+    - sudo pip install .
+
+script:
+  - echo "{'m':1}" | python dict2uml/dict2uml.py
