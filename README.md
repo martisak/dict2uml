@@ -1,6 +1,6 @@
 # dict2uml
 
-[![Build Status](https://travis-ci.org/martisak/dict2uml.svg?branch=master)](https://travis-ci.org/martisak/dict2uml) [![PyPI version](https://badge.fury.io/py/dict2uml.svg)](https://badge.fury.io/py/dict2uml)
+[![Build Status](https://travis-ci.org/martisak/dict2uml.svg?branch=master)](https://travis-ci.org/martisak/dict2uml) [![PyPI version](https://badge.fury.io/py/dict2uml.svg)](https://badge.fury.io/py/dict2uml) [![GitHub license](https://img.shields.io/github/license/martisak/dict2uml.svg)](https://github.com/martisak/dict2uml/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/martisak/dict2uml.svg)](https://github.com/martisak/dict2uml/stargazers) [![GitHub forks](https://img.shields.io/github/forks/martisak/dict2uml.svg)](https://github.com/martisak/dict2uml/network) [![Code Health](https://landscape.io/github/martisak/dict2uml/master/landscape.svg?style=flat)](https://landscape.io/github/martisak/dict2uml/master)
 
 Python library that prints a Python `dict` as [PlantUML](http://plantuml.com/) code or as an inline picture in a [Jupyter](http://jupyter.org/) Notebook.
 
@@ -12,6 +12,12 @@ Install `plantuml`, for example with `brew install plantuml`. The location shoul
 
 ~~~
 pip install dict2uml
+~~~
+
+Optionally install `jupyter` to generate these pictures directly in a notebook.
+
+~~~
+pip install jupyter
 ~~~
 
 ## Usage
