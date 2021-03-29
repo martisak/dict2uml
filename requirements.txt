@@ -35,7 +35,7 @@ pkginfo==1.4.1
 prompt-toolkit==1.0.15
 ptyprocess==0.5.2
 py==1.4.34
-Pygments==2.2.0
+Pygments==2.7.4
 pytest==3.2.3
 python-dateutil==2.6.1
 pyzmq==16.0.3
